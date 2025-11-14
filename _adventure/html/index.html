@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.rtl.min.css">
+    <title>Adventure Space</title>
+</head>
+<body>
+    <!-- Início do Menu Responsivo -->
+    <header id="header">
+        <a id="logo" href="index.html"><img src="./img/logo.jpg" alt="Logo Adventure"></a>
+    <figcaption></figcaption>
+    <nav id="nav">
+        <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+            <span id="hamburger"></span>
+        </button>
+        <ul id="menu" role="menu">
+            <li><a class="linkMenu" href="index.html">Home</a></li>
+            <li><a class="linkMenu" href="produtos.html">Produtos</a></li>
+            <li><a class="linkMenu" href="streaming.html">Streaming</a></li>
+            <li><a class="linkMenu" href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    </header>
+<!-- Fim do menu responsivo -->
+
+<!-- Início Carousel Home-->
+ <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
+    <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active" data-bs-interval="2000">
+            <img src="./img/carousel_1.webp" alt="..." class="d-block w-100">
+        </div>
+        <div class="carousel-item" data-bs-interval="1000">
+            <img src="./img/carousel_2.jpg" alt="..." class="d-block w-100">
+        </div>
+        <div class="carousel-item" data-bs-interval="1000">
+            <img src="./img/carousel_3.avif" alt="..." class="d-block w-100">
+        </div>
+        <div class="carousel-item" data-bs-interval="1000">
+            <img src="./img/carousel_4.jpeg" alt="..." class="d-block w-100">
+        </div>
+        
+    </div>
+    <!-- Início controles carousel-->
+    <button
+        class="carousel-control-prev"
+        data-bs-target="#carouselExampleInterval"
+        type="button"
+        data-bs-slide="prev"
+    >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+    </button>
+    <button
+        class="carousel-control-next"
+        data-bs-target="#carouselExampleInterval"
+        type="button"
+        data-bs-slide="next"
+    >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Próximo</span>
+    </button>
+    <!-- Fim controles carousel-->
+
+ </div>
+</body>
+<script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./js/menu.js"></script>
+
+</html>
